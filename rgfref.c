@@ -50,7 +50,7 @@ static char workingdir[BUFLEN] = ".";
 
 void gli_initialize_filerefs()
 {
-    tagcounter = (random() % 15) + 48;
+    tagcounter = (rand() % 15) + 48;
 }
 
 fileref_t *glkunix_fileref_find_by_updatetag(glui32 tag)

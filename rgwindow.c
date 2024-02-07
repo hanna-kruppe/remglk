@@ -50,8 +50,8 @@ void gli_initialize_windows()
     int ix;
 
     generation = 0;
-    srandom(time(NULL));
-    tagcounter = (random() % 15) + 16;
+    srand(time(NULL));
+    tagcounter = (rand() % 15) + 16;
     gli_rootwin = NULL;
     
     /* Build a convenient array of spaces. */

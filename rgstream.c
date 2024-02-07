@@ -29,7 +29,7 @@ stream_t *gli_currentstr = NULL; /* the current output stream */
 
 void gli_initialize_streams()
 {
-    tagcounter = (random() % 15) + 32;
+    tagcounter = (rand() % 15) + 32;
 }
 
 stream_t *glkunix_stream_find_by_updatetag(glui32 tag)

@@ -5,7 +5,13 @@
     http://eblong.com/zarf/glk/
 */
 
+// The header for getcwd() is platform-specific
+#if _WIN32
+#include <direct.h>
+#else
 #include <unistd.h>
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
